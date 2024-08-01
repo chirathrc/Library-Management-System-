@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="1036.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryManagementSystem.controller.ManageReaderController">
+   <children>
+      <ImageView fitHeight="73.0" fitWidth="68.0" layoutX="38.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/reading.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="133.0" layoutY="43.0" prefHeight="56.0" prefWidth="356.0" text="Reader Managemnet ">
+         <font>
+            <Font name="System Bold" size="33.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserSearch" layoutX="32.0" layoutY="144.0" onKeyReleased="#txtUserSerachQuick" prefHeight="33.0" prefWidth="171.0" promptText="Serach NIC" />
+      <JFXButton buttonType="RAISED" layoutX="877.0" layoutY="144.0" onAction="#btnRegisterNewReader" prefHeight="33.0" prefWidth="131.0" style="-fx-background-color: #b2bec3;" text="Register Reader" />
+      <TextField fx:id="txtReaderFn" layoutX="675.0" layoutY="279.0" prefHeight="33.0" prefWidth="180.0" promptText="First Name" />
+      <TextField fx:id="txtReaderLn" layoutX="675.0" layoutY="330.0" prefHeight="33.0" prefWidth="180.0" promptText="Last Name" />
+      <TextField fx:id="txtReaderRegistereddate" editable="false" layoutX="675.0" layoutY="383.0" prefHeight="33.0" prefWidth="180.0" promptText="Registered Date" />
+      <TextField fx:id="txtReaderNIC" editable="false" layoutX="675.0" layoutY="435.0" prefHeight="33.0" prefWidth="180.0" promptText="NIC" />
+      <TextField fx:id="txtReaderBirthday" editable="false" layoutX="675.0" layoutY="484.0" prefHeight="33.0" prefWidth="180.0" promptText="Birthday" />
+      <TextField fx:id="txtReaderGender" editable="false" layoutX="675.0" layoutY="532.0" prefHeight="33.0" prefWidth="180.0" promptText="Gender" />
+      <JFXButton layoutX="899.0" layoutY="279.0" onAction="#btnUpdateRegisterUser" prefHeight="33.0" prefWidth="99.0" style="-fx-background-color: #b2bec3;" text="Update" />
+      <JFXToggleButton fx:id="statusToogleButton" layoutX="880.0" layoutY="503.0" prefHeight="58.0" prefWidth="138.0" text="Active" />
+      <TableView fx:id="tableReaderTable" layoutX="32.0" layoutY="247.0" onMouseClicked="#mouseClickedReaderTable" prefHeight="302.0" prefWidth="609.0">
+         <columns>
+            <TableColumn fx:id="tbaleReaderId" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="tableReaderNIC" prefWidth="100.0" text="NIC" />
+            <TableColumn fx:id="tableReaderName" prefWidth="115.0" text="Name" />
+            <TableColumn fx:id="tableReaderGender" prefWidth="53.0" text="Gender" />
+            <TableColumn fx:id="tabelReaderBirthday" prefWidth="90.0" text="Birthday" />
+            <TableColumn fx:id="tableReaderregTime" prefWidth="101.0" text="RegisterTime" />
+            <TableColumn fx:id="tableReaderStatus" prefWidth="99.0" text="Status" />
+         </columns>
+      </TableView>
+      <JFXButton layoutX="900.0" layoutY="324.0" onAction="#btnDeleteRegisterUser" prefHeight="33.0" prefWidth="99.0" style="-fx-background-color: #b2bec3;" text="Delete" />
+   </children>
+</AnchorPane>

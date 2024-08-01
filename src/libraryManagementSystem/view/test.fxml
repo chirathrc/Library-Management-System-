@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="764.0" prefWidth="1191.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryManagementSystem.controller.DashboardController">
+   <children>
+      <Pane prefHeight="764.0" prefWidth="334.0" style="-fx-background-color: #dfe4ea;">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="171.0" layoutX="93.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/programmer.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="txtAdminName" alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="226.0" prefHeight="35.0" prefWidth="197.0" text="Chirath Rothila">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="txtUsernameAdmin" alignment="CENTER" contentDisplay="CENTER" layoutX="69.0" layoutY="261.0" prefHeight="35.0" prefWidth="197.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="245.0" fitWidth="264.0" layoutX="35.0" layoutY="496.0">
+               <image>
+                  <Image url="@../resources/Untitled_design-removebg-preview.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <JFXButton layoutX="372.0" layoutY="470.0" onAction="#btnManageReaders" prefHeight="77.0" prefWidth="387.0" style="-fx-background-color: #81ecec; -fx-background-radius: 5px;" text="Manage Readers">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="784.0" layoutY="470.0" onAction="#btnManageBooks" prefHeight="77.0" prefWidth="387.0" style="-fx-background-color: #a29bfe; -fx-background-radius: 5px;" text="Manage Books">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="372.0" layoutY="592.0" onAction="#btnManageBookIssuing" prefHeight="77.0" prefWidth="387.0" style="-fx-background-color: #fab1a0; -fx-background-radius: 5px;" text="Book Issuing">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="784.0" layoutY="592.0" onAction="#btnManageBookReturning" prefHeight="77.0" prefWidth="387.0" style="-fx-background-color: #ffeaa7; -fx-background-radius: 5px;" text="Book Returning">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </JFXButton>
+      <Label alignment="CENTER" layoutX="436.0" layoutY="733.0" prefHeight="17.0" prefWidth="696.0" text="\@2024 Library Management System. All Rights Reserved." />
+      <ImageView fitHeight="413.0" fitWidth="433.0" layoutX="543.0" layoutY="20.0">
+         <image>
+            <Image url="@../resources/Untitled_design-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

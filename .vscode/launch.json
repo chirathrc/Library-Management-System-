@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "abc",
+            "request": "launch",
+            "mainClass": "libraryManagementSystem.tm.abc",
+            "projectName": "Libraray Managemnet System_e9213806"
+        },
+        {
+            "type": "java",
+            "name": "Test",
+            "request": "launch",
+            "mainClass": "libraryManagementSystem.database.Test",
+            "projectName": "Libraray Managemnet System_e9213806"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "libraryManagementSystem.Main.Main",
+            "projectName": "Libraray Managemnet System_e9213806",
+            "vmArgs": "--module-path \"C:/Program Files/Java/javafx-sdk-17.0.11/lib\" --add-modules javafx.controls,javafx.fxml"
+        }
+    ]
+}

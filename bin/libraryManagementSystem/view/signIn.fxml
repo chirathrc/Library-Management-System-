@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="496.0" prefWidth="776.0" style="-fx-background-color: #a5b1c2;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="libraryManagementSystem.controller.SignInController">
+   <children>
+      <Label alignment="CENTER" layoutX="351.0" layoutY="45.0" prefHeight="66.0" prefWidth="350.0" text="Sign IN">
+         <font>
+            <Font name="Arial Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="378.0" layoutY="191.0" prefHeight="17.0" prefWidth="115.0" text="UserName ">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="378.0" layoutY="256.0" prefHeight="17.0" prefWidth="115.0" text="Password">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtUserUserName" layoutX="500.0" layoutY="189.0" prefHeight="26.0" prefWidth="192.0" />
+      <PasswordField fx:id="txtUserPassword" layoutX="500.0" layoutY="254.0" prefHeight="26.0" prefWidth="192.0" />
+      <JFXButton layoutX="391.0" layoutY="400.0" onAction="#btnSignIn" prefHeight="33.0" prefWidth="271.0" style="-fx-background-color: #3ae374; -fx-background-radius: 10;" text="Sign IN">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="371.0" fitWidth="363.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/Untitled_design-removebg-preview.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
